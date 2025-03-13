@@ -1,0 +1,26 @@
+{
+    "name": "andrei_via/calendar",
+    "description": "Add a calendar to your livewire app",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrea Lanciano",
+            "email": "andrealanciano@me.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Calendar\\Calendar\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Calendar\\Calendar\\CalendarServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
