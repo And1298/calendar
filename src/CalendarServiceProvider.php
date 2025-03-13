@@ -1,6 +1,6 @@
 <?php
 
-namespace TuoNomeVendor\Calendar;
+namespace Calendar\Calendar;
 
 use Livewire\Livewire;
 use Illuminate\Support\ServiceProvider;
