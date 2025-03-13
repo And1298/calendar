@@ -3,8 +3,9 @@
 namespace Calendar;
 
 use Livewire\Livewire;
-use Illuminate\Support\ServiceProvider;
 use Calendar\Http\Livewire\Counter;
+use Calendar\Http\Livewire\Calendar;
+use Illuminate\Support\ServiceProvider;
 
 class CalendarServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,7 @@ class CalendarServiceProvider extends ServiceProvider
     public function boot()
     {
         Livewire::component( 'calendar::counter', Counter::class );
+        Livewire::component( 'calendar::calendar', Calendar::class );
 
         $this->loadViewsFrom( __DIR__.'/../Views', 'calendar' );
     }
