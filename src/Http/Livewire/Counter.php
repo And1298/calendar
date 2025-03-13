@@ -1,6 +1,6 @@
 <?php
 
-namespace AndreiVia\Calendar\Http\Livewire;
+namespace Calendar\Http\Livewire;
 
 use Livewire\Component;
 

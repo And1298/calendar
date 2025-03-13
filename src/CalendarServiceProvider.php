@@ -1,10 +1,10 @@
 <?php
 
-namespace AndreiVia\Calendar;
+namespace Calendar;
 
 use Livewire\Livewire;
 use Illuminate\Support\ServiceProvider;
-use AndreiVia\Calendar\Http\Livewire\Counter;
+use Calendar\Http\Livewire\Counter;
 
 class CalendarServiceProvider extends ServiceProvider
 {
