@@ -2,7 +2,9 @@
 
 namespace TuoNomeVendor\Calendar;
 
+use Livewire\Livewire;
 use Illuminate\Support\ServiceProvider;
+use AndreiVia\Calendar\Http\Livewire\Counter;
 
 class CalendarServiceProvider extends ServiceProvider
 {
@@ -13,6 +15,8 @@ class CalendarServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        // Qui possiamo caricare viste, rotte, migrazioni, ecc.
+        Livewire::component( 'calendar-counter', Counter::class );
+
+        $this->loadViewsFrom( __DIR__.'/../Views', 'calendar' );
     }
 }
