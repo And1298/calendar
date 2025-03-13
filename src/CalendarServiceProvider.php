@@ -15,7 +15,7 @@ class CalendarServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        Livewire::component( 'calendar-counter', Counter::class );
+        Livewire::component( 'calendar::counter', Counter::class );
 
         $this->loadViewsFrom( __DIR__.'/../Views', 'calendar' );
     }
