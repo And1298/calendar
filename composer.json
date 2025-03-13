@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Calendar\\Calendar\\": "src/"
+            "Calendar\\": "src/"
         }
     },
     "extra": {
@@ -22,5 +22,9 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^8.0",
+        "livewire/livewire": "^2.0"
+    }
 }
