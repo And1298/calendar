@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Calendar\\Calendar\\CalendarServiceProvider"
+                "AndreiVia\\Calendar\\CalendarServiceProvider"
             ]
         }
     },

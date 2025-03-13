@@ -1,6 +1,6 @@
 <?php
 
-namespace Calendar\Calendar;
+namespace AndreiVia\Calendar;
 
 use Livewire\Livewire;
 use Illuminate\Support\ServiceProvider;
