@@ -22,19 +22,19 @@ class Calendar extends Component
 
     public function generateCalendar()
     {
-        $date = Carbon::create($this->currentYear, $this->currentMonth, 1);
+        $date = Carbon::create( $this->currentYear, $this->currentMonth, 1 );
         $this->daysInMonth = $date->daysInMonth;
         $this->firstDayOfMonth = $date->dayOfWeek;
         $this->weeks = [];
 
         $day = 1;
-        for ($week = 0; $week < 6; $week++) {
-            $this->weeks[$week] = [];
-            for ($weekday = 0; $weekday < 7; $weekday++) {
-                if (($week === 0 && $weekday < $this->firstDayOfMonth) || $day > $this->daysInMonth) {
-                    $this->weeks[$week][$weekday] = null;
+        for ( $week = 0; $week < 6; $week++ ) {
+            $this->weeks[ $week ] = [];
+            for ( $weekday = 0; $weekday < 7; $weekday++ ) {
+                if ( ( $week === 0 && $weekday < $this->firstDayOfMonth ) || $day > $this->daysInMonth ) {
+                    $this->weeks[ $week ][ $weekday ] = null;
                 } else {
-                    $this->weeks[$week][$weekday] = $day;
+                    $this->weeks[ $week ][ $weekday ] = $day;
                     $day++;
                 }
             }
@@ -44,7 +44,7 @@ class Calendar extends Component
     public function prevMonth()
     {
         $this->currentMonth--;
-        if ($this->currentMonth < 1) {
+        if ( $this->currentMonth < 1 ) {
             $this->currentMonth = 12;
             $this->currentYear--;
         }
@@ -54,7 +54,7 @@ class Calendar extends Component
     public function nextMonth()
     {
         $this->currentMonth++;
-        if ($this->currentMonth > 12) {
+        if ( $this->currentMonth > 12 ) {
             $this->currentMonth = 1;
             $this->currentYear++;
         }
@@ -63,6 +63,6 @@ class Calendar extends Component
 
     public function render()
     {
-        return view('livewire.calendar');
+        return view( 'livewire.calendar' );
     }
 }
